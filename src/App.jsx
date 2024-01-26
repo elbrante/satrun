@@ -2,6 +2,7 @@ import cl from './App.module.sass'
 import {Main} from "./components/Main";
 import {About} from "./components/About";
 import {Mission} from "./components/Mission";
+import {Roadmap} from "./components/Roadmap";
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <Main/>
             <About/>
             <Mission/>
+            <Roadmap/>
         </div>
     );
 }

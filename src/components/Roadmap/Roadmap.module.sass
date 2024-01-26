@@ -1,0 +1,123 @@
+.roadmap
+  min-height: 2122px //возможно стоит сделать 100vh, но судя по дизайну, таким образом будет смотреться лучше
+  background-color: black
+  background-image: url("roadmap.jpg")
+  background-repeat: no-repeat
+  background-position: center center
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 200px
+
+.titleBlock
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 50px
+
+.title
+  color: white
+  font-size: 50px
+  line-height: 75px
+
+.mainBlock
+  width: 65%
+  //height: 1000px
+  //background-color: gray
+  display: flex
+  flex-direction: column
+
+.stages
+  display: flex
+  width: 100%
+  justify-content: space-between
+  padding: 0px 100px
+
+
+.text
+  font-size: 30px
+  line-height: 30px
+  text-transform: uppercase
+  color: white
+  width: 130px
+
+.descRight, .descLeft
+  width: 370px
+  text-transform: uppercase
+  font-size: 30px
+  line-height: 30px
+  color: white
+  
+.descLeft
+  text-align: left
+  
+.descRight
+  text-align: right
+
+.blockWithBorder
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-top: 20px
+  padding-top: 20px
+  padding-bottom: 20px
+  border-top: 1px white solid
+  border-right: 1px white solid
+  border-bottom: 1px white solid
+  height: 500px
+
+
+.blockWithBorder:before
+
+  content: " "
+  background: white
+  width: 18%
+  height: 1px
+  /* располагаем линию сверху от текста */
+  top: 405px
+  left: 0
+  /* включаем абсолютное позиционирование относительно блока с relative */
+  position: absolute
+
+
+.bottomBlockWithBorder
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  padding-top: 20px
+  padding-bottom: 20px
+  margin-bottom: 20px
+  height: 500px
+  border-left: 1px white solid
+  border-bottom: 1px white solid
+
+.bottomBlockWithBorder:after
+  content: " "
+  background: white
+  width: 18%
+  height: 1px
+  right: 0
+  bottom: 717px
+  position: absolute
+
+.star1
+  position: absolute
+  top: 0
+  right: 0
+
+.star2
+  position: absolute
+  right: -180px
+  top: 800px
+
+.star3
+  position: absolute
+  left: -260px
+  bottom: 200px
