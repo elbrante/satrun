@@ -4,6 +4,7 @@ import {About} from "./components/About";
 import {Mission} from "./components/Mission";
 import {Roadmap} from "./components/Roadmap";
 import {CrossChainBridge} from "./components/CrossChainBridge";
+import {Footer} from "./components/Footer";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Mission/>
             <Roadmap/>
             <CrossChainBridge/>
+            <Footer/>
         </div>
     );
 }
