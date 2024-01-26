@@ -3,6 +3,7 @@ import {Main} from "./components/Main";
 import {About} from "./components/About";
 import {Mission} from "./components/Mission";
 import {Roadmap} from "./components/Roadmap";
+import {CrossChainBridge} from "./components/CrossChainBridge";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <About/>
             <Mission/>
             <Roadmap/>
+            <CrossChainBridge/>
         </div>
     );
 }
