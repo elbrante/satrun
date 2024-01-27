@@ -4,7 +4,7 @@ import planet from '../../assets/planet.png'
 
 export const CrossChainBridge = () => {
     return (
-        <section className={cl.cross}>
+        <section className={cl.cross} id={'cross'}>
             <div className={cl.titleBlock}>
                 <span className={cl.title}>cross-chain bridge</span>
             </div>

@@ -4,7 +4,7 @@ import {Mail, Saturn} from "../../assets/icons";
 
 export const Footer = () => {
     return (
-        <footer className={cl.footer}>
+        <footer className={cl.footer} id={'contact'}>
             <div className={cl.leftSide}>
                 <Saturn/>
                 <span className={cl.text}>© 2024 All rights reserved</span>

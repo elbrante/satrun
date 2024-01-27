@@ -6,7 +6,7 @@ import star3 from '../../assets/star3.png'
 
 export const Roadmap = () => {
     return (
-        <section className={cl.roadmap}>
+        <section className={cl.roadmap} id={'roadmap'}>
             <div className={cl.titleBlock}>
                 <span className={cl.title}>ROADMAP</span>
             </div>

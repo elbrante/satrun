@@ -6,7 +6,7 @@ import {BigCard} from "./BigCard";
 
 export const Mission = () => {
     return (
-        <section className={cl.mission}>
+        <section className={cl.mission} id={'mission'}>
             <div className={cl.blockTitle}>
                 <span className={cl.title}>MISSION</span>
             </div>

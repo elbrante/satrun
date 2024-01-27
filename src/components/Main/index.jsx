@@ -13,10 +13,25 @@ export const Main = () => {
                         <ChatIcon/>
                         <TelegramIcon/>
                     </div>
-                    <nav>
-                        <NavButton/>
-                    </nav>
+
+                    <div className={cl.hamburgerMenu}>
+                        <input id={cl.menu__toggle} type="checkbox"/>
+                        <label className={cl.menu__btn} htmlFor={cl.menu__toggle}>
+                            <span></span>
+                        </label>
+                        <ul className={cl.menu__box}>
+                            <li><a className={cl.menu__item} href="#about">About</a></li>
+                            <li><a className={cl.menu__item} href="#mission">Mission</a></li>
+                            <li><a className={cl.menu__item} href="#cross">Cross-Chain Bridge</a></li>
+                            <li><a className={cl.menu__item} href="#roadmap">Roadmap</a></li>
+                            <li><a className={cl.menu__item} href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
                 </div>
+
+
+
+
             </header>
             <section className={cl.sectionBlock}>
                 <div className={cl.wrapper}>

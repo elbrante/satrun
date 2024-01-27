@@ -4,7 +4,7 @@ import {Saturn} from "../../assets/icons";
 
 export const About = () => {
     return (
-        <section className={cl.about}>
+        <section className={cl.about} id={'about'}>
             <span className={cl.title}>ABOUT</span>
 
             <div className={cl.blockText}>
