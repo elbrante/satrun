@@ -20,10 +20,21 @@ export const Mission = () => {
                     />
                 </div>
 
-                <BigCard title={'Ensuring Interoperability'}
-                      desc={'SATURN enables users to use BRC-20 tokens on Ethereum and vice versa, providing a high level of interoperability between these ecosystems'}
+                <div className={cl.wrapperBigCard}>
 
-                />
+                    <BigCard title={'Ensuring Interoperability'}
+                             desc={'SATURN enables users to use BRC-20 tokens on Ethereum and vice versa, providing a high level of interoperability between these ecosystems'}
+
+                    />
+                </div>
+
+                <div className={cl.changeBigCard}>
+                    <Card title={'Ensuring Interoperability'}
+                          desc={'SATURN enables users to use BRC-20 tokens on Ethereum and vice versa, providing a high level of interoperability between these ecosystems'}
+                    />
+                </div>
+
+
                 <div className={cl.columnCards}>
                     <Card title={'Empowering DApps'}
                           desc={'Support the development of decentralized applications by enabling them to use BRC-20 and ERC-20 tokens in their operations'}

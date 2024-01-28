@@ -28,10 +28,6 @@ export const Main = () => {
                         </ul>
                     </div>
                 </div>
-
-
-
-
             </header>
             <section className={cl.sectionBlock}>
                 <div className={cl.wrapper}>
