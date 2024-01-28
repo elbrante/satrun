@@ -10,24 +10,62 @@
   background-size: cover
   position: relative
   display: flex
-  justify-content: space-between
   align-items: center
-  padding: 50px 200px
+
+.wrapper
+  display: flex
+  justify-content: space-between
+  width: 100%
+  padding: 0 40px
+
+  @media only screen and (max-width: 850px)
+    flex-direction: column
+    align-items: flex-start
+    gap: 20px
+
 
 .leftSide, .rightSide
   display: flex
   flex-direction: column
   gap: 50px
-
+  @media only screen and (max-width: 850px)
+    gap: 20px
 
 .rightSide
   max-width: 520px
+  align-items: flex-end
 
-.text
+  @media only screen and (max-width: 850px)
+    align-items: flex-start
+
+.leftSide
+  @media only screen and (max-width: 1150px)
+    svg
+      width: 300px
+
+  @media only screen and (max-width: 425px)
+    svg
+      width: 200px
+
+
+.text, .textRight, .textLeft
   font-size: 24px
   line-height: 40px
   color: white
   text-transform: uppercase
+  @media only screen and (max-width: 1150px)
+    font-size: 16px
+
+  @media only screen and (max-width: 425px)
+    font-size: 12px
+
+.textLeft
+  text-align: left
+
+.textRight
+  text-align: right
+  @media only screen and (max-width: 850px)
+    text-align: left
 
 .mail
   width: max-content
@@ -37,3 +75,11 @@
   display: flex
   gap: 20px
   padding: 20px 40px
+
+  @media only screen and (max-width: 425px)
+    svg
+      width: 32px
+    padding: 5px 20px
+    height: 50px
+
+

@@ -14,6 +14,13 @@
   align-items: center
   gap: 100px
 
+  @media only screen and  (max-width: 768px)
+    min-height: 1400px
+    gap: 50px
+
+  @media only screen and  (max-width: 425px)
+    min-height: 1800px
+    gap: 50px
 
 .titleBlock
   width: 100%
@@ -26,12 +33,18 @@
   line-height: 75px
   margin-top: 50px
   text-transform: uppercase
+  @media only screen and (max-width: 768px)
+    font-size: 40px
+    text-align: center
 
 .mainContent
   display: flex
   flex-direction: column
   gap: 100px
   width: 85%
+  @media only screen and (max-width: 768px)
+    width: 95%
+    gap: 50px
 
 .topText
   padding: 50px 60px
@@ -42,6 +55,14 @@
   align-items: center
   border-radius: 18px
   gap: 150px
+  @media only screen and (max-width: 1400px)
+    height: max-content
+    flex-direction: column
+    gap: 50px
+
+  @media only screen and (max-width: 768px)
+    padding: 10px 20px
+
 
 .textLeft, .textRight
   color: white
@@ -49,11 +70,22 @@
   width: 600px
   line-height: 50px
 
+  @media only screen and (max-width: 768px)
+    width: 100%
+    font-size: 16px
+    line-height: 30px
+
+
 .textLeft
   text-align: left
 
+  @media only screen and (max-width: 1400px)
+    text-align: justify
+
 .textRight
   text-align: right
+  @media only screen and (max-width: 1400px)
+    text-align: justify
 
 .bottomText
   height: 930px
@@ -65,12 +97,22 @@
   align-items: center
   justify-content: center
 
+  @media only screen and (max-width: 1400px)
+    width: 100%
+    margin-left: 0
+
+  @media only screen and (max-width: 768px)
+    height: max-content
+    padding: 10px 20px
+
 .planet
   position: absolute
   right: -400px
   bottom: 900px
   z-index: 2
   animation: spin 10s linear 0s infinite
+  @media only screen and  (max-width: 1400px)
+    display: none
 
 @keyframes spin
   from
@@ -91,14 +133,22 @@
   bottom: 1000px
   right: 230px
   z-index: 1
+  margin: 0 20px
+
+  @media only screen and  (max-width: 1400px)
+    position: static
+    width: 85%
+
+
+
 
 
 .texTrading
   font-size: 45px
   text-align: center
-  width: inherit
-
-
+  width: 100%
+  @media only screen and  (max-width: 768px)
+    font-size: 25px
 
 
 

@@ -32,19 +32,36 @@
   display: flex
   flex-direction: column
 
+  @media only screen and (max-width: 1100px)
+    width: 95%
+
 .stages
   display: flex
   width: 100%
   justify-content: space-between
-  padding: 0px 100px
+  padding: 0 100px
+  @media only screen and (max-width: 1435px)
+    padding: 0 50px
+
+  @media only screen and (max-width: 1300px)
+    padding: 0 25px
+
+  @media only screen and (max-width: 1300px)
+    padding: 0 5px
 
 
-.text
+
+.text, .textRight
   font-size: 30px
   line-height: 30px
   text-transform: uppercase
   color: white
   width: 130px
+  @media only screen and (max-width: 768px)
+    font-size: 16px
+
+.textRight
+  text-align: right
 
 .descRight, .descLeft
   width: 370px
@@ -52,6 +69,9 @@
   font-size: 30px
   line-height: 30px
   color: white
+  @media only screen and (max-width: 768px)
+    font-size: 16px
+    width: 45%
   
 .descLeft
   text-align: left
@@ -113,8 +133,14 @@
   position: absolute
   right: -180px
   top: 800px
+  @media only screen and (max-width: 1385px)
+    top: 950px
 
 .star3
   position: absolute
   left: -260px
   bottom: 200px
+
+.star1, .star2, .star3
+  @media only screen and (max-width: 768px)
+    display: none

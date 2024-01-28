@@ -16,7 +16,7 @@ export const Roadmap = () => {
                         stage 1
                         q3 2023
                     </span>
-                    <span className={cl.text}>
+                    <span className={cl.textRight}>
                         stage 2
                         q3 2023
                     </span>
@@ -64,7 +64,7 @@ export const Roadmap = () => {
                             stage 5
                             q1 2024
                         </span>
-                        <span className={cl.text}>
+                        <span className={cl.textRight}>
                             stage 6
                             q2 2024
                         </span>
