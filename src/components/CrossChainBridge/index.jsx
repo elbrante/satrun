@@ -32,9 +32,9 @@ export const CrossChainBridge = () => {
                 </div>
             </div>
             <img src={planet} className={cl.planet}/>
-            <div className={cl.trading}>
+            <button className={cl.trading}>
                 <span className={cl.texTrading}>Trading on Uniswap</span>
-            </div>
+            </button>
         </section>
     );
 };
