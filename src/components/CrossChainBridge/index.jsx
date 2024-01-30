@@ -1,8 +1,15 @@
 import React from 'react';
 import cl from './CrossChainBridge.module.sass'
 import planet from '../../assets/planet.png'
+import {CopyButton, Ethereum} from "../../assets/icons";
+import iconForCopy from '../../assets/iconForCopy.png'
 
 export const CrossChainBridge = () => {
+
+    function copy() {
+        navigator.clipboard.writeText('0x049E9f5369358786A1cE6483d668D062cfe547ec').then(() => {})
+    }
+
     return (
         <section className={cl.cross} id={'cross'}>
             <div className={cl.titleBlock}>
@@ -32,9 +39,27 @@ export const CrossChainBridge = () => {
                 </div>
             </div>
             <img src={planet} className={cl.planet}/>
-            <button className={cl.trading}>
-                <span className={cl.texTrading}>Trading on Uniswap</span>
-            </button>
+            <div className={cl.buttonCopy}>
+                <div className={cl.trading} id={'textTrading'}>
+                    <span className={cl.textTrading}>Trading on Uniswap</span>
+                </div>
+                <div className={cl.copyBlock}>
+                    <span className={cl.text}>Contract</span>
+                    <div className={cl.wrappBlock}>
+                        <div className={cl.block}>
+                            <Ethereum/>
+                            <span className={cl.boldText}>0x3B...b07</span>
+                        </div>
+                        <div className={cl.block}>
+                            <button onClick={copy}>
+                                <CopyButton/>
+                            </button>
+                            <img src={iconForCopy} alt={'лого'}/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     );
 };
