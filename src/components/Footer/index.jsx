@@ -1,6 +1,6 @@
 import React from 'react';
 import cl from './Footer.module.sass'
-import {Mail, Saturn} from "../../assets/icons";
+import {Mail, Saturn, Share} from "../../assets/icons";
 
 export const Footer = () => {
     return (
@@ -11,6 +11,10 @@ export const Footer = () => {
                     <span className={cl.textLeft}>© 2024 All rights reserved</span>
                 </div>
                 <div className={cl.rightSide}>
+                    <div className={cl.share}>
+                        <Share/>
+                        <span className={cl.text}>share</span>
+                    </div>
                     <div className={cl.mail}>
                         <Mail/>
                         <span className={cl.text}>support@saturn.org</span>
